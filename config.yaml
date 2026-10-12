@@ -1,0 +1,24 @@
+# Hermes Agent - Asclepio Profile Configuration
+
+model:
+  default: "gemini-2.5-flash"
+  provider: "gemini"
+
+display:
+  streaming: true
+  compact: false
+
+toolsets:
+  enabled:
+    - "terminal"
+    - "files"
+    - "web"
+    - "skills"
+
+agent:
+  max_turns: 60
+  reasoning_effort: "high"
+
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
